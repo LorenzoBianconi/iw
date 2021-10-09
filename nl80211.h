@@ -5995,6 +5995,9 @@ enum nl80211_feature_flags {
  * @NL80211_EXT_FEATURE_BSS_COLOR: The driver supports BSS color collision
  *	detection and change announcemnts.
  *
+ * @NL80211_EXT_FEATURE_RADAR_OFFCHAN: Device supports offchannel radar/CAC
+ *	detection.
+ *
  * @NUM_NL80211_EXT_FEATURES: number of extended features.
  * @MAX_NL80211_EXT_FEATURES: highest extended feature index.
  */
@@ -6060,6 +6063,7 @@ enum nl80211_ext_feature_index {
 	NL80211_EXT_FEATURE_SECURE_RTT,
 	NL80211_EXT_FEATURE_PROT_RANGE_NEGO_AND_MEASURE,
 	NL80211_EXT_FEATURE_BSS_COLOR,
+	NL80211_EXT_FEATURE_RADAR_OFFCHAN,
 
 	/* add new features before the definition below */
 	NUM_NL80211_EXT_FEATURES,
